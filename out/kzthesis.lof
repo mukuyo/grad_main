@@ -3,10 +3,12 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces YOLOモデルの検出の流れ}}{3}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces RGB-Dカメラを用いた深層学習によるアイソメ図作成方法}}{5}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 配管の検出例}}{6}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces RXDネットワーク構造図}}{7}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 平面二自由度マニピュレータのモデル}}{9}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 動的可操作性楕円体の軸長（特異値）の変化}}{10}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 動的可操作性楕円体計測実験システム}}{10}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 平面二自由度マニピュレータのモデル}}{11}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 動的可操作性楕円体の軸長（特異値）の変化}}{12}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 動的可操作性楕円体計測実験システム}}{12}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

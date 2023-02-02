@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  2 FEB 2023 15:07
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  2 FEB 2023 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -157,6 +157,12 @@ LaTeX Warning: Label `fig:f2' multiply defined.
 
 LaTeX Warning: Label `fig:f2' multiply defined.
 
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
 ) (./chapter_3.aux) (./chapter_4.aux) (./chapter_5.aux) (./bibliography.aux)
 (./appendix.aux))
 \openout1 = `kzthesis.aux'.
@@ -277,30 +283,34 @@ Overfull \hbox (23.4972pt too wide) in paragraph at lines 17--18
 
 
 
-]) [6]
+]
+File: pipe.eps Graphic file (type eps)
+ <pipe.eps>
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 45.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 45.
+File: RXDnet.eps Graphic file (type eps)
+ <RXDnet.eps>) [6] [7]
 \openout2 = `chapter_3.aux'.
 
- (./chapter_3.tex
+ (./chapter_3.tex [8
+
+
+
+
+]
 第\hspace {0.25zw} 3 \hspace {0.25zw}章
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 25.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 25.
-[7
-
-
-
-
-] [8]
+[9] [10]
 File: Fig_c3/manipulator.eps Graphic file (type eps)
  <Fig_c3/manipulator.eps>
 File: Fig_c3/SVsWF_long.eps Graphic file (type eps)
  <Fig_c3/SVsWF_long.eps>
 File: Fig_c3/SVsWF_short.eps Graphic file (type eps)
 
-<Fig_c3/SVsWF_short.eps> [9]
+<Fig_c3/SVsWF_short.eps> [11]
 File: Fig_c3/image_08.eps Graphic file (type eps)
- <Fig_c3/image_08.eps>) [10]
+ <Fig_c3/image_08.eps>) [12]
 \openout2 = `chapter_4.aux'.
 
  (./chapter_4.tex
@@ -308,26 +318,26 @@ File: Fig_c3/image_08.eps Graphic file (type eps)
 
 Underfull \vbox (badness 1189) has occurred while \output is active []
 
- [11
+ [13
 
 
 
 
 ]
-[12]) [13]
+[14]) [15]
 \openout2 = `chapter_5.aux'.
 
- (./chapter_5.tex [14
+ (./chapter_5.tex [16
 
 
 
 
 ]
 第\hspace {0.25zw} 5 \hspace {0.25zw}章
-) [15]
+) [17]
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex [16
+ (./bibliography.tex [18
 
 
 
@@ -337,17 +347,17 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 20.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 25.
-) [17]
+) [19]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex [18
+ (./appendix.tex [20
 
 
 
 
 ]
 付録 A  
-) [19] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux)
+) [21] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux)
 (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./chapter_4.aux)
 (./chapter_5.aux) (./bibliography.aux) (./appendix.aux))
 
@@ -355,12 +365,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2740 strings out of 478741
- 42939 string characters out of 5860983
- 341890 words of memory out of 5000000
- 21062 multiletter control sequences out of 15000+600000
+ 2750 strings out of 478741
+ 43079 string characters out of 5860983
+ 341892 words of memory out of 5000000
+ 21070 multiletter control sequences out of 15000+600000
  496818 words of font info for 133 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  70i,17n,76p,625b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kzthesis.dvi (27 pages, 66880 bytes).
+Output written on kzthesis.dvi (29 pages, 71496 bytes).
