@@ -1,0 +1,44 @@
+% -----------------------------------------------------------------------------
+%	kzthesis.tex  v 1.1.0
+%
+%	機能	pLaTeX2e template file for master's & graduation thesis
+%			in Kawamura & Kanaoka Lab. in Ritsumeikan Univ., Japan.
+%
+%	履歴	2002.12.15 v100 kzgeneric v211 をもとに作成．
+%			2005.02.12 v110 参照するファイル名をいくつか変更．
+%
+%													   last updated 2005.02.12
+%											  Copyright 2002 - Katsuya KANAOKA
+% -----------------------------------------------------------------------------
+
+
+\documentclass{kzthesis}				% kzthesis.cls を使用
+
+%\includeonly{title,chapter_1,bib}		% 一部だけをコンパイルする場合
+\begin{document}
+
+\thispagestyle{empty}
+\include{title}							% タイトルページ
+
+\frontmatter							% 頁はローマ数字，章番号を付けない
+\include{abstract}						% 摘要
+\include{acknowledgments}				% 謝辞
+
+\tableofcontents						% 目次
+\listoffigures
+\listoftables
+
+
+
+\mainmatter								% 本文開始，頁は算用数字，章番号を付ける
+\include{chapter_1}
+\include{chapter_2}
+\include{chapter_3}
+\include{chapter_4}
+\include{chapter_5}
+\include{bibliography}					% 参考文献
+
+\appendix								% 付録
+\include{appendix}						% 付録が無い場合はコメントアウト
+
+\end{document}

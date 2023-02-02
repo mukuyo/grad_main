@@ -1,0 +1,62 @@
+\chapter{数式の記述}
+
+本付録では，数式の記述例を示す．
+本手引のクラスファイル \texttt{kzthesis.cls} 独自のコマンドの使用法の説明も兼ねているので，
+参考にすること．
+
+
+\section{記述例}
+
+まず，受動性の定義を与えておく \Cite{03}．
+システムの入力 $\bm{u}$ と出力 $\bm{y}$ が同じ次元であるとする．
+このとき，ある有限な正の定数 $\gamma_0{}^2$ に対して次式が成り立つならば，
+システムは受動的であるという．
+\begin{equation}
+	\int_0^t \bm{y}^T(\tau) \bm{u}(\tau) d\tau \ge -\gamma_0{}^2, \qquad {}^\forall t>0				\label{eq:passivity}
+\end{equation}
+
+一方，$n$ 自由度ロボットの動力学は一般に次のような微分方程式に従う．
+\begin{equation}
+	\bm{u} = \bm{M}(\bm{q}) \ddot{\bm{q}}
+		 + \frac{1}{2} \dot{\bm{M}}(\bm{q}) \dot{\bm{q}}
+		 + \bm{S}(\bm{q},\dot{\bm{q}}) \dot{\bm{q}}
+		 + \bm{g}(\bm{q})
+		 + \bm{d}(\dot{\bm{q}})																		\label{eq:em}
+\end{equation}
+ただし，
+$\bm{q} \in \Re^n$ は関節変位ベクトル，
+$\bm{u} \in \Re^n$ は関節駆動力ベクトルである．
+右辺第一項は慣性項であり，$\bm{M}(\bm{q}) \in \Re^{n \times n}$ は実対称正定な慣性行列である．
+第二，三項は非線形項であり，$\bm{S}(\bm{q},\dot{\bm{q}}) \in \Re^{n \times n}$ は歪対称行列となる．
+$\bm{g}(\bm{q}) \in \Re^n$ はポテンシャル項である．
+$\bm{d}(\dot{\bm{q}}) \in \Re^n$ は摩擦等による散逸項であり，
+その各成分は $\dot{\bm{q}}$ の対応する成分と常に同符号である．
+$K(\bm{q},\dot{\bm{q}})$，$P(\bm{q})$ をそれぞれ運動エネルギー，ポテンシャルエネルギーとすると，
+以下のような関係が成り立つ．
+\begin{align}
+	K(\bm{q},\dot{\bm{q}}) &= (1/2) \, \dot{\bm{q}}{}^T \bm{M}(\bm{q}) \dot{\bm{q}}					\\
+	\bm{g}(\bm{q}) &= (\partial P(\bm{q})/\partial \bm{q}{}^T){}^T
+\end{align}
+このとき，
+ロボットの全内部エネルギーは $E(\bm{q},\dot{\bm{q}}) = K(\bm{q},\dot{\bm{q}}) + P(\bm{q})$ となる．
+
+ロボットシステムは，
+速度出力 $\bm{y} = \dot{\bm{q}}$ に関して受動的であることが知られている．
+すなわち，式 \Eq{em} から，
+\begin{align}
+	\int_0^t \dot{\bm{q}}{}^T \bm{u} \, d\tau
+		&= \int_0^t \dot{\bm{q}}{}^T \left\{
+			\bm{M} \ddot{\bm{q}}
+			+ \frac{1}{2} \dot{\bm{M}} \dot{\bm{q}}
+			+ \bm{S}(\bm{q},\dot{\bm{q}}) \dot{\bm{q}}
+			+ \bm{g}(\bm{q})
+			+ \bm{d}(\dot{\bm{q}}) \right\} d\tau													\nonumber \\
+		&= \int_0^t \frac{d}{d\tau} \left\{ K(\bm{q},\dot{\bm{q}}) + P(\bm{q})) \right\} d\tau
+			+ \int_0^t \dot{\bm{q}}{}^T \bm{d}(\dot{\bm{q}}) \, d\tau 								\nonumber \\
+		&= E(\bm{q}(t),\dot{\bm{q}}(t)) - E(\bm{q}(0),\dot{\bm{q}}(0))
+			+ \int_0^t \dot{\bm{q}}{}^T \bm{d}(\dot{\bm{q}}) \, d\tau 								\nonumber \\
+		&\ge - E(\bm{q}(0),\dot{\bm{q}}(0)) = -\gamma_0{}^2											\label{eq:limit}
+\end{align}
+となり，式 \Eq{passivity} が成立する．
+ただし，$\bm{S}$ の歪対称性と $\dot{\bm{q}}{}^T \bm{d}(\dot{\bm{q}}) \ge 0$ を用いた．
+上式から，$\gamma_0{}^2$ はロボットの初期内部エネルギーと解釈できる．
