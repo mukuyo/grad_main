@@ -1,4 +1,5 @@
-﻿\section{実験}
+﻿\chapter{%
+実験}
 
 RGB-Dカメラから取得したデータセットをRXDネットワークを使用し曲管又はT字管を認識できるか検証する。
 物体認識においては他のネットワークでも実験し、RXDネットワークの有用性を確かめる。
@@ -15,9 +16,19 @@ IoUは0~1.0の値の範囲で示され、値が大きければ大きいほどラ
 
 \begin{figure}[htbt]
 	\centering
+	 \includegraphics[height=45mm]{iou.eps}
+	 \caption{Intersection over Union(IOU)}
+	 \label{fig:f2}
+\end{figure}
+
+\begin{figure}[htbt]
+	\centering
 	 \includegraphics[height=35mm]{recall.eps}
 	 \caption{適合率と再現率}
 	 \label{fig:f2}
 \end{figure}
 
+
+\section{結果と考察}
+\subsection{物体検出}
 

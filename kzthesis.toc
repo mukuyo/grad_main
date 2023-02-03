@@ -13,9 +13,9 @@
 \contentsline {section}{\numberline {3.1}使用機材}{9}{}%
 \contentsline {section}{\numberline {3.2}物体検出のデータセット収集}{10}{}%
 \contentsline {section}{\numberline {3.3}6D姿勢推定のデータセット収集}{11}{}%
-\contentsline {section}{\numberline {3.4}実験}{12}{}%
-\contentsline {section}{\numberline {3.5}評価指標}{12}{}%
-\contentsline {chapter}{\numberline {第\hspace {0.25zw}4\hspace {0.25zw}章}結言}{13}{}%
-\contentsline {chapter}{参考文献}{15}{}%
-\contentsline {chapter}{\numberline {付録A }数式の記述}{17}{}%
-\contentsline {section}{\numberline {A.1}記述例}{17}{}%
+\contentsline {chapter}{\numberline {第\hspace {0.25zw}4\hspace {0.25zw}章}実験}{13}{}%
+\contentsline {section}{\numberline {4.1}評価指標}{13}{}%
+\contentsline {chapter}{\numberline {第\hspace {0.25zw}5\hspace {0.25zw}章}結言}{15}{}%
+\contentsline {chapter}{参考文献}{17}{}%
+\contentsline {chapter}{\numberline {付録A }数式の記述}{19}{}%
+\contentsline {section}{\numberline {A.1}記述例}{19}{}%

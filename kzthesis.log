@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  3 FEB 2023 22:46
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  3 FEB 2023 23:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -179,7 +179,14 @@ LaTeX Warning: Label `fig:f2' multiply defined.
 
 LaTeX Warning: Label `fig:f2' multiply defined.
 
-) (./chapter_4.aux))
+) (./chapter_4.aux
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+) (./chapter_5.aux) (./bibliography.aux) (./appendix.aux))
 \openout1 = `kzthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -205,7 +212,8 @@ LaTeX Font Info:    ... okay on input line 18.
  (./title.tex)
 \openout2 = `abstract.aux'.
 
- (./abstract.tex
+
+(./abstract.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
@@ -229,7 +237,21 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
- (./kzthesis.toc)
+ (./kzthesis.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write3
 \openout3 = `kzthesis.toc'.
 
@@ -239,7 +261,8 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 
 ] [4
 
-] (./kzthesis.lof)
+]
+(./kzthesis.lof)
 \tf@lof=\write4
 \openout4 = `kzthesis.lof'.
 
@@ -249,8 +272,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 \tf@lot=\write5
 \openout5 = `kzthesis.lot'.
 
-
-[7] [8
+ [7] [8
 
 ]
 \openout2 = `chapter_1.aux'.
@@ -331,18 +353,22 @@ File: bent.eps Graphic file (type eps)
  <bent.eps>) [11]
 \openout2 = `chapter_4.aux'.
 
- (./chapter_4.tex
-File: recall.eps Graphic file (type eps)
- <recall.eps>) [12
+ (./chapter_4.tex [12
+
 
 
 
 ]
+第\hspace {0.25zw} 4 \hspace {0.25zw}章
+File: iou.eps Graphic file (type eps)
+<iou.eps>
+File: recall.eps Graphic file (type eps)
+ <recall.eps>) [13] [14]
 \openout2 = `chapter_5.aux'.
 
  (./chapter_5.tex
-第\hspace {0.25zw} 4 \hspace {0.25zw}章
-) [13
+第\hspace {0.25zw} 5 \hspace {0.25zw}章
+) [15
 
 
 
@@ -350,7 +376,7 @@ File: recall.eps Graphic file (type eps)
 ]
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex [14
+ (./bibliography.tex [16
 
 
 
@@ -360,58 +386,30 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 20.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 25.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [15]
+) [17]
 \openout2 = `appendix.aux'.
 
-
-(./appendix.tex [16
+ (./appendix.tex [18
 
 
 
 
 ]
 付録 A  
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 10.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 10.
-
-LaTeX Warning: Citation `bib:03' on page 17 undefined on input line 10.
-
-
-LaTeX Warning: Reference `eq:em' on page 17 undefined on input line 45.
-
-
-LaTeX Warning: Reference `eq:passivity' on page 17 undefined on input line 60.
-
-) [17] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux)
+) [19] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux)
 (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./chapter_4.aux)
 (./chapter_5.aux) (./bibliography.aux) (./appendix.aux))
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2693 strings out of 478741
- 42134 string characters out of 5860983
- 340661 words of memory out of 5000000
- 21029 multiletter control sequences out of 15000+600000
+ 2708 strings out of 478741
+ 42332 string characters out of 5860983
+ 340849 words of memory out of 5000000
+ 21037 multiletter control sequences out of 15000+600000
  486940 words of font info for 97 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  70i,10n,76p,625b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kzthesis.dvi (25 pages, 48200 bytes).
+Output written on kzthesis.dvi (27 pages, 56116 bytes).

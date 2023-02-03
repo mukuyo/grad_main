@@ -11,6 +11,8 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces 暗闇でのRGB-Dカメラの撮影}}{9}{}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Intel Realsense L515}}{10}{}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Colmapを用いた曲菅の点群データ}}{11}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 適合率と再現率}}{12}{}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Intersection over Union(IOU)}}{13}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 適合率と再現率}}{14}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
