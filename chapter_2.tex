@@ -50,7 +50,12 @@ Gen6Dは複数物体の検出ができないが、RXDネットワークから認
 それぞれ渡すことでRefinerを通して最終的に画像内の全ての曲管及びT字管の姿勢を求めることが可能になる。
 
 \subsection{RXDネットワーク}
-物体検出に使用するRXDネットワークについて紹介する。RXDネットワークの構成を図2.4に示す。
+物体検出に使用するRXDネットワークについて紹介する。RXDネットワークの構成を図2.4に示す。RGBガメラから取得されたRGB画像とDepth画像を
+それぞれConvolutional setに挿入することで特徴を抽出することができる。深層学習は基本的に層を深くすることで認識精度が向上するため、RXDネットワークでは複数回畳み込み層を使用している。
+また、畳み込みの際にはBatch Normalization(BN)、ReLU、Max Pooling(MP)を各層に取り入れている。Batch Normalizationは各バッチのデータを使用し正規化を行う。
+その結果、出力が適度に分散され、勾配消失などの問題が起こりにくくなり、学習が適切に進む。特に深めのネットワークを使用したときに、数カ所に挟むことで効果を得る。
+次にMax PoolingとはCNNで用いられる基本的なプーリング層である。最大値プーリングではカーネル内の最大値のみを残すプーリング処理である。これらの層を複数利用することで
+特徴をより濃くすることができる。
 
 \begin{figure}[htbt]
 	\centering
@@ -58,3 +63,29 @@ Gen6Dは複数物体の検出ができないが、RXDネットワークから認
 	 \caption{RXDネットワーク構造図}
 	 \label{fig:f2}
 \end{figure}
+
+RXD層の内部構成を図2.5に示す。RXD層の中身ではRGB画像とDepth画像がRXDネットワークで畳み込まれたデータを結合する役割を担っている。
+まず、RGB画像とDepth画像をそれぞれ畳み込み特徴マップを取り出す。それらのデータをConcatenate関数を用いて連結させる。
+次に、結合されたデータを畳み込んだあとはSigmoid関数という活性化関数を使用する。
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=65mm]{sig.eps}
+	 \caption{Sigmoid関数のグラフ}
+	 \label{fig:f2}
+\end{figure}
+通常の活性化関数にはReLU関数が使用され、入力が0以下の時は0を、0より大きい時はその値を出力する関数である。Sigmoid関数はReLU関数とは違い、
+入力値xの値に依らず、0～1の数値に変換して出力する。
+次に、Sigmoid関数によって出力された値をそれぞれもとのRXDネットワークから入力されたデータと乗算する。このステップによりRGB画像とDepth画像の
+相関を利用し特徴マップの表現力を強化することができる。これによって得られたそれぞれの値をConcatenate関数を用いることで結合し、
+２度の畳み込み層を経ることで出力結果が求められる。
+
+
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=85mm]{RXD.eps}
+	 \caption{RXDネットワーク構造図}
+	 \label{fig:f2}
+\end{figure}
+
+
+
