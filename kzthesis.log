@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  3 FEB 2023 13:39
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  3 FEB 2023 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -326,44 +326,41 @@ File: realsense.eps Graphic file (type eps)
 
 
 
-] [10] [11]
-File: Fig_c3/manipulator.eps Graphic file (type eps)
- <Fig_c3/manipulator.eps>
-File: Fig_c3/SVsWF_long.eps Graphic file (type eps)
- <Fig_c3/SVsWF_long.eps>
-File: Fig_c3/SVsWF_short.eps Graphic file (type eps)
+]
+Overfull \hbox (0.48274pt too wide) in paragraph at lines 40--43
+[]\OT1/cmr/m/n/12 6D \JY1/mc/m/n/12 姿勢推定のデ ータセ ッ トには \OT1/cmr/m/n/
+12 Colmap \JY1/mc/m/n/12 を使用して点群デ ータを取得する 。 \OT1/cmr/m/n/12 Col
+map
+ []
 
-<Fig_c3/SVsWF_short.eps>
-File: Fig_c3/image_08.eps Graphic file (type eps)
- <Fig_c3/image_08.eps> [12]) [13]
+) [10]
 \openout2 = `chapter_4.aux'.
 
  (./chapter_4.tex
-[14
+第\hspace {0.25zw} 4 \hspace {0.25zw}章
+
+Underfull \vbox (badness 1189) has occurred while \output is active []
+
+ [11
 
 
 
 
 ]
-第\hspace {0.25zw} 4 \hspace {0.25zw}章
-
-Underfull \vbox (badness 1189) has occurred while \output is active []
-
- [15]
-[16]) [17]
+[12]) [13]
 \openout2 = `chapter_5.aux'.
 
- (./chapter_5.tex [18
+ (./chapter_5.tex [14
 
 
 
 
 ]
 第\hspace {0.25zw} 5 \hspace {0.25zw}章
-) [19]
+) [15]
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex [20
+ (./bibliography.tex [16
 
 
 
@@ -373,17 +370,17 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 20.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 25.
-) [21]
+) [17]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex [22
+ (./appendix.tex [18
 
 
 
 
 ]
 付録 A  
-) [23] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux)
+) [19] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux)
 (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./chapter_4.aux)
 (./chapter_5.aux) (./bibliography.aux) (./appendix.aux))
 
@@ -391,12 +388,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2753 strings out of 478741
- 43100 string characters out of 5860983
- 341892 words of memory out of 5000000
- 21070 multiletter control sequences out of 15000+600000
- 493629 words of font info for 121 fonts, out of 8000000 for 9000
+ 2692 strings out of 478741
+ 42112 string characters out of 5860983
+ 341893 words of memory out of 5000000
+ 21025 multiletter control sequences out of 15000+600000
+ 486940 words of font info for 97 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 70i,17n,76p,625b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,10n,76p,625b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kzthesis.dvi (31 pages, 76520 bytes).
+Output written on kzthesis.dvi (27 pages, 67340 bytes).
