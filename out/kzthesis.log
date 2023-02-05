@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  3 FEB 2023 23:20
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  6 FEB 2023 02:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,20 +339,72 @@ File: bent.eps Graphic file (type eps)
 File: iou.eps Graphic file (type eps)
 <iou.eps>
 File: recall.eps Graphic file (type eps)
-<recall.eps>) [13] [14]
+<recall.eps>
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 46.
+[13]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 64.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 64.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 64.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 64.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 64.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 64.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 64.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 64.
+[14]) [15]
 \openout2 = `chapter_5.aux'.
 
-(./chapter_5.tex
-第\hspace {0.25zw} 5 \hspace {0.25zw}章
-) [15
+(./chapter_5.tex [16
 
 
 
 
 ]
+第\hspace {0.25zw} 5 \hspace {0.25zw}章
+) [17]
 \openout2 = `bibliography.aux'.
 
-(./bibliography.tex [16
+(./bibliography.tex [18
 
 
 
@@ -362,28 +414,28 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 20.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 25.
-) [17]
+) [19]
 \openout2 = `appendix.aux'.
 
-(./appendix.tex [18
+(./appendix.tex [20
 
 
 
 
 ]
 付録 A  
-) [19] (out/kzthesis.aux (out/title.aux) (out/abstract.aux) (out/acknowledgments.aux) (out/chapter_1.aux) (out/chapter_2.aux) (out/chapter_3.aux) (out/chapter_4.aux) (out/chapter_5.aux) (out/bibliography.aux) (out/appendix.aux))
+) [21] (out/kzthesis.aux (out/title.aux) (out/abstract.aux) (out/acknowledgments.aux) (out/chapter_1.aux) (out/chapter_2.aux) (out/chapter_3.aux) (out/chapter_4.aux) (out/chapter_5.aux) (out/bibliography.aux) (out/appendix.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2710 strings out of 478741
- 42588 string characters out of 5860983
+ 2712 strings out of 478741
+ 42612 string characters out of 5860983
  340849 words of memory out of 5000000
- 21037 multiletter control sequences out of 15000+600000
- 486940 words of font info for 97 fonts, out of 8000000 for 9000
+ 21038 multiletter control sequences out of 15000+600000
+ 487299 words of font info for 98 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 70i,10n,76p,657b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,10n,76p,657b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/kzthesis.dvi (27 pages, 56780 bytes).
+Output written on out/kzthesis.dvi (29 pages, 63344 bytes).
