@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  6 FEB 2023 12:58
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  6 FEB 2023 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -156,9 +156,6 @@ LaTeX Warning: Label `fig:f2' multiply defined.
 
 LaTeX Warning: Label `fig:f2' multiply defined.
 
-
-LaTeX Warning: Label `fig:f2' multiply defined.
-
 ) (./chapter_2.aux
 
 LaTeX Warning: Label `fig:f2' multiply defined.
@@ -207,7 +204,47 @@ LaTeX Warning: Label `fig:f2' multiply defined.
 
 LaTeX Warning: Label `fig:f2' multiply defined.
 
-) (./chapter_5.aux) (./bibliography.aux) (./appendix.aux))
+) (./chapter_5.aux) (./bibliography.aux
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+
+LaTeX Warning: Label `bib:epaper' multiply defined.
+
+) (./appendix.aux))
 \openout1 = `kzthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -233,8 +270,7 @@ LaTeX Font Info:    ... okay on input line 18.
  (./title.tex)
 \openout2 = `abstract.aux'.
 
-
-(./abstract.tex
+ (./abstract.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
@@ -249,7 +285,8 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 ]
 \openout2 = `acknowledgments.aux'.
 
- (./acknowledgments.tex) [2
+ (./acknowledgments.tex)
+[2
 
 
 
@@ -264,8 +301,7 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
@@ -307,22 +343,17 @@ File: aisome.eps Graphic file (type eps)
 ]
 File: flow.eps Graphic file (type eps)
  <flow.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
+File: yolo.eps Graphic file (type eps)
+ <yolo.eps>
+Underfull \vbox (badness 7362) has occurred while \output is active []
 
  [2]
-[3]
 File: gen6d-network.eps Graphic file (type eps)
- <gen6d-network.eps>
-File: yolo.eps Graphic file (type eps)
- <yolo.eps> [4]) [5]
+
+<gen6d-network.eps> [3] [4]) [5] [6]
 \openout2 = `chapter_2.aux'.
 
- (./chapter_2.tex [6
-
-
-
-
-]
+ (./chapter_2.tex
 第\hspace {0.25zw} 2 \hspace {0.25zw}章
 File: system.eps Graphic file (type eps)
 <system.eps>
@@ -330,7 +361,12 @@ Overfull \hbox (23.4972pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
-[7]
+[7
+
+
+
+
+]
 File: pipe.eps Graphic file (type eps)
  <pipe.eps>
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
@@ -474,33 +510,64 @@ File: rviz.eps Graphic file (type eps)
 
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 20.
+(Font)              No change on input line 15.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 25.
-) [23]
+(Font)              No change on input line 21.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 27.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 33.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 39.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 45.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 52.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 59.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 65.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 71.
+ [23]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 77.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 83.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 89.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 95.
+) [24]
 \openout2 = `appendix.aux'.
 
- (./appendix.tex [24
-
-
-
-
-]
+ (./appendix.tex
 付録 A  
-) [25] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux)
+
+LaTeX Warning: Citation `bib:03' on page 25 undefined on input line 10.
+
+) [25
+
+
+
+
+] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux)
 (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./chapter_4.aux)
 (./chapter_5.aux) (./bibliography.aux) (./appendix.aux))
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2746 strings out of 478741
- 42819 string characters out of 5860983
- 340850 words of memory out of 5000000
- 21067 multiletter control sequences out of 15000+600000
- 487299 words of font info for 98 fonts, out of 8000000 for 9000
+ 2736 strings out of 478741
+ 42728 string characters out of 5860983
+ 340839 words of memory out of 5000000
+ 21058 multiletter control sequences out of 15000+600000
+ 487110 words of font info for 97 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  70i,10n,76p,625b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kzthesis.dvi (33 pages, 68180 bytes).
+Output written on kzthesis.dvi (33 pages, 74976 bytes).
