@@ -46,6 +46,27 @@ RXD                 & 70.9                 & 37.2                               
 }
 \end{table}
 
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=85mm]{detect.eps}
+	 \caption{適合率と再現率}
+	 \label{fig:f2}
+\end{figure}
+
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=85mm]{ap.eps}
+	 \caption{適合率と再現率}
+	 \label{fig:f2}
+\end{figure}
+
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=85mm]{ap50.eps}
+	 \caption{適合率と再現率}
+	 \label{fig:f2}
+\end{figure}
+
 表4.1よりRXDネットワークがAPとAP50の平均値がともに最も数値が高かった。また、パラメータ数に関してはYOLOv3, YOLOv3-Depthよりも低い値となりより優れているネットワークであると言える。
 RGB画像だけでなくDepth画像も学習させると情報量が多くなるため、畳み込む回数も増加しパラメータ数が結果的に多くなる。しかし、RXDネットワークはパラメータ数を抑えつつ、優れた精度を持っているため実験したネットワークの中で最も良いネットワークであると言える。
 しかし、APの平均値はともに優れた値であったが、bentとjunction個々の値で見るとYOLOv3のほうがjunctionを検出するにおいてはいい結果になっていた。そのため、認識したい物体によってはネットワーク検出器を変更することで、より望ましい結果を得られる可能性もある。
@@ -67,8 +88,22 @@ RGB画像だけでなくDepth画像も学習させると情報量が多くなる
 これは、もとのDepth画像のデータセットと比較すると遠くの物体になるほどデータが欠落しているため、認識が困難であったと考えられる。そのため、RGB-Dカメラの精度が低いと物体検出の精度に影響してくることがわかる。
 また、暗闇の中でのテスト画像ではYOLOv3-DepthとRXDネットワークの出力結果が配管を認識できていた。これは暗闇の状況下でも影響を受けないDepth画像が役に立っていると考えられる。
 
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=80mm]{6d.eps}
+	 \caption{適合率と再現率}
+	 \label{fig:f2}
+\end{figure}
+
+
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=65mm]{rviz.eps}
+	 \caption{適合率と再現率}
+	 \label{fig:f2}
+\end{figure}
+
 次に、６D姿勢推定の結果を図4.3に示す。既存のGen6Dのみでは検出器がオブジェクトの複数認識に対応していなかった。RXDネットワークは画像の中の全てのオブジェクトを認識可能なため、検出された値をGen6DのSelectorに渡すことで複数姿勢推定を可能とする。
 しかし、結果では曲管の姿勢がボックスとうまく一致しなく望ましくない結果になった。
 また、図4.4のようにjunction同士が向かい合っている画像の姿勢推定を行い、それぞれのオブジェクトのYaw, Pitch, Rollを求めた。表の結よりjunction同士が向かい合っていることがわかる。
 次に、表の結果のそれぞれの姿勢を用いて、Rvizを使用してそれぞれのオブジェクトの座標系を可視化した。完全に向かい合った結果にはならなかったが、T字管の位置関係と姿勢を表示することができた。
-

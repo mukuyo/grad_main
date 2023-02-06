@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  6 FEB 2023 02:42
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  6 FEB 2023 13:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -136,6 +136,9 @@ File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
 
 LaTeX Warning: Label `fig:f2' multiply defined.
 
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
 ) (out/chapter_2.aux
 
 LaTeX Warning: Label `fig:f2' multiply defined.
@@ -163,6 +166,21 @@ LaTeX Warning: Label `fig:f2' multiply defined.
 LaTeX Warning: Label `fig:f2' multiply defined.
 
 ) (out/chapter_4.aux
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
 
 LaTeX Warning: Label `fig:f2' multiply defined.
 
@@ -258,20 +276,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 (./chapter_1.tex
 第\hspace {0.25zw} 1 \hspace {0.25zw}章
+File: aisome.eps Graphic file (type eps)
+<aisome.eps>
+File: flow.eps Graphic file (type eps)
+<flow.eps> [1
 
-Underfull \vbox (badness 3108) has occurred while \output is active []
 
-[1
-
-
-] [2]
+]
 File: gen6d-network.eps Graphic file (type eps)
 <gen6d-network.eps>
+Underfull \vbox (badness 5374) has occurred while \output is active []
+
+[2] [3]
 File: yolo.eps Graphic file (type eps)
-<yolo.eps> [3]) [4]
+<yolo.eps> [4]) [5]
 \openout2 = `chapter_2.aux'.
 
-(./chapter_2.tex
+(./chapter_2.tex [6
+
+
+
+
+]
 第\hspace {0.25zw} 2 \hspace {0.25zw}章
 File: system.eps Graphic file (type eps)
 <system.eps>
@@ -279,19 +305,14 @@ Overfull \hbox (23.4972pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
-[5
-
-
-
-
-]
+[7]
 File: pipe.eps Graphic file (type eps)
 <pipe.eps>
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 45.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 45.
-[6]
+[8]
 File: RXDnet.eps Graphic file (type eps)
 <RXDnet.eps>
 File: sig.eps Graphic file (type eps)
@@ -306,7 +327,7 @@ Overfull \hbox (7.30046pt too wide) in paragraph at lines 85--86
  [][] 
  []
 
-) [7] [8]
+) [9] [10]
 \openout2 = `chapter_3.aux'.
 
 (./chapter_3.tex
@@ -314,7 +335,7 @@ Overfull \hbox (7.30046pt too wide) in paragraph at lines 85--86
 File: pipe_rgbd.eps Graphic file (type eps)
 <pipe_rgbd.eps>
 File: realsense.eps Graphic file (type eps)
-<realsense.eps> [9
+<realsense.eps> [11
 
 
 
@@ -324,12 +345,12 @@ Overfull \hbox (0.48274pt too wide) in paragraph at lines 46--49
 []\OT1/cmr/m/n/12 6D \JY1/mc/m/n/12 姿勢推定のデ ータセ ッ トには \OT1/cmr/m/n/12 Colmap \JY1/mc/m/n/12 を使用して点群デ ータを取得する 。 \OT1/cmr/m/n/12 Colmap
  []
 
-[10]
+[12]
 File: bent.eps Graphic file (type eps)
-<bent.eps>) [11]
+<bent.eps>) [13]
 \openout2 = `chapter_4.aux'.
 
-(./chapter_4.tex [12
+(./chapter_4.tex [14
 
 
 
@@ -374,37 +395,51 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 46.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 46.
-[13]
+[15]
+File: detect.eps Graphic file (type eps)
+<detect.eps>
+Overfull \hbox (31.56192pt too wide) in paragraph at lines 51--52
+ [][] 
+ []
+
+File: ap.eps Graphic file (type eps)
+<ap.eps>
+File: ap50.eps Graphic file (type eps)
+<ap50.eps> [16]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 64.
+(Font)              No change on input line 85.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 64.
+(Font)              No change on input line 85.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 64.
+(Font)              No change on input line 85.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 64.
+(Font)              No change on input line 85.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 64.
+(Font)              No change on input line 85.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 64.
+(Font)              No change on input line 85.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 64.
+(Font)              No change on input line 85.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 64.
-[14]) [15]
+(Font)              No change on input line 85.
+[17]
+File: 6d.eps Graphic file (type eps)
+<6d.eps>
+File: rviz.eps Graphic file (type eps)
+<rviz.eps>) [18] [19]
 \openout2 = `chapter_5.aux'.
 
-(./chapter_5.tex [16
+(./chapter_5.tex [20
 
 
 
 
 ]
 第\hspace {0.25zw} 5 \hspace {0.25zw}章
-) [17]
+) [21]
 \openout2 = `bibliography.aux'.
 
-(./bibliography.tex [18
+(./bibliography.tex [22
 
 
 
@@ -414,28 +449,28 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 20.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 25.
-) [19]
+) [23]
 \openout2 = `appendix.aux'.
 
-(./appendix.tex [20
+(./appendix.tex [24
 
 
 
 
 ]
 付録 A  
-) [21] (out/kzthesis.aux (out/title.aux) (out/abstract.aux) (out/acknowledgments.aux) (out/chapter_1.aux) (out/chapter_2.aux) (out/chapter_3.aux) (out/chapter_4.aux) (out/chapter_5.aux) (out/bibliography.aux) (out/appendix.aux))
+) [25] (out/kzthesis.aux (out/title.aux) (out/abstract.aux) (out/acknowledgments.aux) (out/chapter_1.aux) (out/chapter_2.aux) (out/chapter_3.aux) (out/chapter_4.aux) (out/chapter_5.aux) (out/bibliography.aux) (out/appendix.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2712 strings out of 478741
- 42612 string characters out of 5860983
- 340849 words of memory out of 5000000
- 21038 multiletter control sequences out of 15000+600000
+ 2748 strings out of 478741
+ 43075 string characters out of 5860983
+ 340860 words of memory out of 5000000
+ 21067 multiletter control sequences out of 15000+600000
  487299 words of font info for 98 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  70i,10n,76p,657b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/kzthesis.dvi (29 pages, 63344 bytes).
+Output written on out/kzthesis.dvi (33 pages, 68384 bytes).
