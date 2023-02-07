@@ -15,8 +15,8 @@
 \contentsline {section}{\numberline {3.3}6D姿勢推定のデータセット収集}{15}{}%
 \contentsline {chapter}{\numberline {第\hspace {0.25zw}4\hspace {0.25zw}章}実験}{17}{}%
 \contentsline {section}{\numberline {4.1}評価指標}{17}{}%
-\contentsline {section}{\numberline {4.2}結果と考察}{17}{}%
-\contentsline {subsection}{\numberline {4.2.1}物体検出}{17}{}%
+\contentsline {section}{\numberline {4.2}結果と考察}{19}{}%
+\contentsline {subsection}{\numberline {4.2.1}物体検出}{19}{}%
 \contentsline {chapter}{\numberline {第\hspace {0.25zw}5\hspace {0.25zw}章}結論}{25}{}%
 \contentsline {section}{\numberline {5.1}本論文のまとめ}{25}{}%
 \contentsline {section}{\numberline {5.2}今後の課題}{25}{}%

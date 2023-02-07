@@ -379,10 +379,10 @@ INPUT ./rxdnet.eps
 INPUT ./rxdnet.eps
 INPUT rxdnet.eps
 INPUT rxdnet.eps
-INPUT ./RXD.eps
-INPUT ./RXD.eps
-INPUT RXD.eps
-INPUT RXD.eps
+INPUT ./RDXa.eps
+INPUT ./RDXa.eps
+INPUT RDXa.eps
+INPUT RDXa.eps
 INPUT ./chapter_3.tex
 INPUT ./chapter_3.tex
 INPUT ./chapter_3.tex

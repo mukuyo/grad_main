@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  7 FEB 2023 16:14
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  7 FEB 2023 16:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -401,9 +401,9 @@ Overfull \hbox (35.24835pt too wide) in paragraph at lines 59--60
 [9]
 File: rxdnet.eps Graphic file (type eps)
  <rxdnet.eps>
-File: RXD.eps Graphic file (type eps)
- <RXD.eps>
-Overfull \hbox (7.30046pt too wide) in paragraph at lines 75--76
+File: RDXa.eps Graphic file (type eps)
+ <RDXa.eps>
+Overfull \hbox (6.70885pt too wide) in paragraph at lines 75--76
  [][] 
  []
 
@@ -439,53 +439,54 @@ File: junction_p.eps Graphic file (type eps)
 
  (./chapter_4.tex
 第\hspace {0.25zw} 4 \hspace {0.25zw}章
-File: iou.eps Graphic file (type eps)
-<iou.eps>
-File: recall.eps Graphic file (type eps)
- <recall.eps> [17
+[17
 
 
 
 
 ]
-Underfull \vbox (badness 1205) has occurred while \output is active []
+File: iou.eps Graphic file (type eps)
+ <iou.eps>
+File: recall.eps Graphic file (type eps)
+ <recall.eps> [18
 
- [18]
-[19]
+] [19
+
+]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 63.
+(Font)              No change on input line 65.
 File: ap.eps Graphic file (type eps)
  <ap.eps>
 File: ap50.eps Graphic file (type eps)
@@ -495,17 +496,20 @@ File: ap50.eps Graphic file (type eps)
 File: re0.eps Graphic file (type eps)
  <re0.eps>
 File: re1.eps Graphic file (type eps)
- <re1.eps> [21]
+
+<re1.eps> [21]
 File: 6d.eps Graphic file (type eps)
  <6d.eps>
-Overfull \hbox (48.55908pt too wide) in paragraph at lines 109--110
+Overfull \hbox (48.55908pt too wide) in paragraph at lines 111--112
  [][] 
  []
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 128.
+(Font)              No change on input line 124.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 128.
+(Font)              No change on input line 124.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 124.
 [22
 
 ]
@@ -571,11 +575,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  2733 strings out of 478741
- 42397 string characters out of 5860983
+ 42402 string characters out of 5860983
  337525 words of memory out of 5000000
  21056 multiletter control sequences out of 15000+600000
  486941 words of font info for 96 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  70i,9n,76p,337b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kzthesis.dvi (36 pages, 83748 bytes).
+Output written on kzthesis.dvi (36 pages, 83736 bytes).
