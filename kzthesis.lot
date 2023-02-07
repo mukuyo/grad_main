@@ -2,7 +2,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces 物体検出ネットワークの実行結果}}{16}{}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces テスト画像を用いた検出結果}}{18}{}%
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces 物体検出ネットワークの実行結果}}{20}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces 物体検出ネットワークの実行結果}}{23}{}%
 \addvspace {10\p@ }

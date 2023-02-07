@@ -6,20 +6,24 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces RGB-Dカメラを用いた深層学習によるアイソメ図作成方法}}{7}{}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 配管の検出例}}{8}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces RXDネットワーク構造図}}{9}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Sigmoid関数のグラフ}}{10}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces ReLU関数}}{9}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Sigmoid関数}}{9}{}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces RXDネットワーク構造図}}{10}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces RXD層}}{10}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 暗闇でのRGB-Dカメラの撮影}}{11}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Intel Realsense L515}}{12}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Colmapを用いた曲菅の点群データ}}{13}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 暗所でのRGB-Dカメラの撮影}}{13}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Intel Realsense L515}}{14}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 学習に用いるデータセットの例}}{15}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Colmapを用いた曲菅の点群データ}}{16}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Colmapを用いたT字管の点群データ}}{16}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Intersection over Union(IOU)}}{15}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 適合率と再現率}}{16}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces 適合率と再現率}}{16}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 適合率と再現率}}{17}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 適合率と再現率}}{17}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces 適合率と再現率}}{18}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces 適合率と再現率}}{19}{}%
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Intersection over Union(IOU)}}{18}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 適合率と再現率}}{18}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces mAPによる検出結果}}{20}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces mAP50による検出結果}}{20}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 各ネットワークの検出結果}}{21}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 適合率と再現率}}{22}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Rvizを用いたT字管の座標系の可視化}}{23}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces 算出されたT字管の距離}}{24}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces 実際のT字管の距離}}{24}{}%
 \addvspace {10\p@ }
