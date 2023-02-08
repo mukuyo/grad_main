@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  7 FEB 2023 16:42
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2023.2.1)  8 FEB 2023 15:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -140,6 +140,12 @@ LaTeX Warning: Label `fig:f2' multiply defined.
 LaTeX Warning: Label `fig:f2' multiply defined.
 
 ) (out/chapter_2.aux
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
 
 LaTeX Warning: Label `fig:f2' multiply defined.
 
@@ -348,7 +354,7 @@ File: gen6d-network.eps Graphic file (type eps)
 第\hspace {0.25zw} 2 \hspace {0.25zw}章
 File: system.eps Graphic file (type eps)
 <system.eps>
-Overfull \hbox (23.4972pt too wide) in paragraph at lines 14--15
+Overfull \hbox (23.4972pt too wide) in paragraph at lines 12--13
 [][] 
  []
 
@@ -361,52 +367,45 @@ Overfull \hbox (23.4972pt too wide) in paragraph at lines 14--15
 File: pipe.eps Graphic file (type eps)
 <pipe.eps>
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 39.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 39.
-[8]
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 37.
+[8] [9]
 File: relu.eps Graphic file (type eps)
 <relu.eps>
-Overfull \hbox (30.6812pt too wide) in paragraph at lines 54--55
- [][] 
- []
-
 File: sigmoid.eps Graphic file (type eps)
 <sigmoid.eps>
-Overfull \hbox (35.24835pt too wide) in paragraph at lines 59--60
- [][] 
- []
-
-[9]
 File: rxdnet.eps Graphic file (type eps)
 <rxdnet.eps>
 File: RDXa.eps Graphic file (type eps)
 <RDXa.eps>
-Overfull \hbox (6.70885pt too wide) in paragraph at lines 75--76
+Overfull \hbox (6.70885pt too wide) in paragraph at lines 74--75
  [][] 
  []
 
 [10
 
-]) [11]
+] [11]) [12
+
+]
 \openout2 = `chapter_3.aux'.
 
-(./chapter_3.tex [12
+(./chapter_3.tex
+第\hspace {0.25zw} 3 \hspace {0.25zw}章
+File: pipe_rgbd.eps Graphic file (type eps)
+<pipe_rgbd.eps> [13
 
 
 
 
 ]
-第\hspace {0.25zw} 3 \hspace {0.25zw}章
-File: pipe_rgbd.eps Graphic file (type eps)
-<pipe_rgbd.eps> [13]
 File: realsense.eps Graphic file (type eps)
 <realsense.eps>
 File: imges.eps Graphic file (type eps)
 <imges.eps> [14]
 File: bent.eps Graphic file (type eps)
 <bent.eps>
-Overfull \hbox (15.3312pt too wide) in paragraph at lines 53--63
+Overfull \hbox (15.3312pt too wide) in paragraph at lines 52--62
 []\OT1/cmr/m/n/12 6D \JY1/mc/m/n/12 姿勢推定のデ ータセ ッ トには \OT1/cmr/m/n/12 Colmap \JY1/mc/m/n/12 を使用して点群デ ータを取得する 。 \OT1/cmr/m/n/12 Colmap2D
  []
 
@@ -556,4 +555,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  70i,9n,76p,369b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/kzthesis.dvi (36 pages, 83736 bytes).
+Output written on out/kzthesis.dvi (36 pages, 83432 bytes).

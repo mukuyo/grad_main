@@ -6,10 +6,10 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces RGB-Dカメラを用いた深層学習によるアイソメ図作成方法}}{7}{}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 配管の検出例}}{8}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces ReLU関数}}{9}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Sigmoid関数}}{9}{}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces RXDネットワーク構造図}}{10}{}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces RXD層}}{10}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces ReLU関数}}{10}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Sigmoid関数}}{10}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces RXDネットワーク構造図}}{11}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces RXD層}}{11}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces 暗所でのRGB-Dカメラの撮影}}{13}{}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Intel Realsense L515}}{14}{}%

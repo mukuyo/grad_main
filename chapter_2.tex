@@ -3,8 +3,6 @@
 
 従来のアイソメ図作成方法では3次元点群を取得できるLIDARセンサーを使用することで図面を作成していたが、LIDARセンサーが他のセンサーよりも高価であるというデメリットを抱えているため、一般的に使用することは困難であるとされていた。
 そのため、本研究ではLIDARセンサーよりも比較的安価なRGB-Dカメラを用いてデータセット収集からアイソメ図作成までの方法を紹介する。
-第2.1節ではRGB-Dカメラを用いた深層学習による配管6D姿勢推定の手順を述べる。
-第2.2節では物体認識のネットワーク設計を詳しく説明する。
 
 \section{配管6D姿勢推定方法}
 RGB-Dカメラを用いた深層学習による配管のアイソメ図作成の手順はデータ収集、物体検出、6D姿勢推定、アイソメ図作成の4つのステップに分けられる。
@@ -48,20 +46,21 @@ Batch Normalizationは各バッチのデータを使用し正規化を行う。�
 RXD層を通過すると最後はPredict層によってっ曲管とT字管の推定結果を得ることができる。このPredict層はYOLOで使用されているYOLO Layerを使用している.RXDネットワークはPredict層が3つ存在しているが、これは様々なスケールの物体に対応するために、
 特徴マップの大きさに応じて３つの出力層があり、それぞれのPredict層で出力または損失をを求める。
 
-\begin{figure}[htbp]
-  \begin{minipage}[b]{0.45\linewidth}
-    \centering
-    \includegraphics[keepaspectratio, scale=0.35]{relu.eps}
-    \caption{ReLU関数}
-  \end{minipage}
-  \begin{minipage}[b]{0.45\linewidth}
-    \centering
-    \includegraphics[keepaspectratio, scale=0.35]{sigmoid.eps}
-    \caption{Sigmoid関数}
-  \end{minipage}
+\clearpage
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=90mm]{relu.eps}
+	 \caption{ReLU関数}
+	 \label{fig:f2}
 \end{figure}
 
-\clearpage
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=90mm]{sigmoid.eps}
+	 \caption{Sigmoid関数}
+	 \label{fig:f2}
+\end{figure}
+
 
 \begin{figure}[htbt]
 	\centering
@@ -76,7 +75,7 @@ RXD層を通過すると最後はPredict層によってっ曲管とT字管の推
 	 \caption{RXD層}
 	 \label{fig:f2}
 \end{figure}
-
+\clearpage
 \subsection{RXD層}
 RXD層の内部構成を図2.5に示す。RXD層の中身ではRGB画像とDepth画像がRXDネットワークで畳み込まれたデータを結合する役割を担っている。
 まず、入力画像であるRGB画像とDepth画像をそれぞれ1x1の畳み込み層を使用してチャネル数を半減させる。チャネル数を減少させることで使用されるパラメータ数を抑制し学習の高速化を狙う目的がある。
@@ -87,6 +86,4 @@ RXD層の内部構成を図2.5に示す。RXD層の中身ではRGB画像とDepth
 次のステップではRXDネットワークから入力された元のデータとSigmoid関数によって出力されたマップを乗算する。このステップによりRGB画像とDepth画像の
 それぞれの特性を維持したまま相関を共有することができる。これによって得られたそれぞれの値をConcatenate関数を用いることで再度結合し、
 ２度の畳み込み層を経ることで完結する。
-
-
 
