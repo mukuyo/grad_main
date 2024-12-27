@@ -1,8 +1,0 @@
--q
--dNOPAUSE
--sDEVICE=pbmraw
--sOUTPUTFILE=manipulator.pbm
--r300
--g508x358
-tmp$.ps
-quit.ps

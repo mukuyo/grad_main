@@ -1,1 +1,0 @@
-C:\tex\bin\mktexpk.exe --dpi 360 --bdpi 300 --mag 1+60/300 cmr17
