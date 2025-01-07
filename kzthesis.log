@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2024.12.26)  6 JAN 2025 19:12
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2024.12.26)  7 JAN 2025 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -272,40 +272,60 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  (./chapter_1.tex
 第\hspace {0.25zw} 1 \hspace {0.25zw}章
 File: Figure/ex_iso.eps Graphic file (type eps)
-<Figure/ex_iso.eps> [1
+<Figure/ex_iso.eps>
+File: Figure/existing_research.eps Graphic file (type eps)
+ <Figure/existing_research.eps>
+File: Figure/ex_pipe.eps Graphic file (type eps)
+ <Figure/ex_pipe.eps> [1
 
 
-] [2]) [3] [4]
+] [2]
+File: Figure/YOLO.eps Graphic file (type eps)
+ <Figure/YOLO.eps> [3]
+File: Figure/Mask-RCNN.eps Graphic file (type eps)
+ <Figure/Mask-RCNN.eps>
+File: Figure/Gen6D.eps Graphic file (type eps)
+ <Figure/Gen6D.eps> [4]
+File: Figure/SAM-6D.eps Graphic file (type eps)
+ <Figure/SAM-6D.eps>
+Overfull \hbox (1.50446pt too wide) in paragraph at lines 125--132
+[]\JY1/mc/m/n/12 一方 、 \OT1/cmr/m/n/12 RGB-D \JY1/mc/m/n/12 カメラを使用した手法としては 、 \OT1/cmr/m/n/12 SAM-6D \JY1/mc/m/n/12 （\OT1/cmr/m/n/12 Seg-ment Any-thing Model
+ []
+
+File: Figure/new_research.eps Graphic file (type eps)
+<Figure/new_research.eps>
+Underfull \vbox (badness 2142) has occurred while \output is active []
+
+ [5] [6]) [7]
 \openout2 = `chapter_2.aux'.
 
- (./chapter_2.tex
-第\hspace {0.25zw} 2 \hspace {0.25zw}章
-[5
+ (./chapter_2.tex [8
 
 
 
 ]
+第\hspace {0.25zw} 2 \hspace {0.25zw}章
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 23.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 23.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 23.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 23.
- [6]) [7]
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
+[9] [10]) [11]
 \openout2 = `chapter_3.aux'.
 
- (./chapter_3.tex [8
+ (./chapter_3.tex [12
 
 
 
 ]
 第\hspace {0.25zw} 3 \hspace {0.25zw}章
-) [9]
+) [13]
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex [10
+ (./bibliography.tex [14
 
 
 
@@ -318,7 +338,7 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 15.
 
-[11]) [12] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux) (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./bibliography.aux))
+[15]) [16] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux) (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./bibliography.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -327,12 +347,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2192 strings out of 481768
- 27272 string characters out of 5933619
- 269276 words of memory out of 5000000
- 17548 multiletter control sequences out of 15000+600000
+ 2227 strings out of 481768
+ 27918 string characters out of 5933619
+ 269347 words of memory out of 5000000
+ 17576 multiletter control sequences out of 15000+600000
  549661 words of font info for 91 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 38i,4n,35p,321b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,4n,35p,336b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kzthesis.dvi (20 pages, 36880 bytes).
+Output written on kzthesis.dvi (24 pages, 50928 bytes).
