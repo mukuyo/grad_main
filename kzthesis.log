@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2024.12.26)  9 JAN 2025 13:52
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2024.12.26)  10 JAN 2025 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -130,7 +130,11 @@ File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count190
 \g__pdf_backend_link_int=\count191
 \g__pdf_backend_link_sf_int=\count192
-) (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux) (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./bibliography.aux
+) (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux) (./chapter_1.aux) (./chapter_2.aux
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+) (./chapter_3.aux) (./bibliography.aux
 
 LaTeX Warning: Label `bib:epaper' multiply defined.
 
@@ -305,24 +309,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 第\hspace {0.25zw} 2 \hspace {0.25zw}章
+File: Figure/detect_class.eps Graphic file (type eps)
+<Figure/detect_class.eps> [9]
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 19.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 19.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
-[9] [10]) [11]
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 35.
+ [10]
+Underfull \vbox (badness 2384) has occurred while \output is active []
+
+ [11]) [12]
 \openout2 = `chapter_3.aux'.
 
- (./chapter_3.tex [12
+ (./chapter_3.tex
+第\hspace {0.25zw} 3 \hspace {0.25zw}章
+) [13
 
 
 
 ]
-第\hspace {0.25zw} 3 \hspace {0.25zw}章
-) [13]
 \openout2 = `bibliography.aux'.
 
  (./bibliography.tex [14
@@ -347,12 +356,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2227 strings out of 481768
- 27918 string characters out of 5933619
- 269347 words of memory out of 5000000
- 17576 multiletter control sequences out of 15000+600000
+ 2231 strings out of 481768
+ 28016 string characters out of 5933619
+ 268347 words of memory out of 5000000
+ 17579 multiletter control sequences out of 15000+600000
  549661 words of font info for 91 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  38i,4n,35p,336b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kzthesis.dvi (24 pages, 50968 bytes).
+Output written on kzthesis.dvi (24 pages, 55628 bytes).
