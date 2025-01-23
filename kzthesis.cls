@@ -27,6 +27,7 @@
 \RequirePackage[dvips]{graphicx}    % グラフィック (PostScript)
 \RequirePackageWithOptions{amssymb}
 \RequirePackageWithOptions{amsmath}
+\RequirePackageWithOptions{amsfonts}
 \RequirePackageWithOptions{bm}     % for bold math
 
 %
