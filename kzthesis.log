@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2024.12.26)  24 JAN 2025 16:16
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2024.12.26)  24 JAN 2025 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,15 +335,19 @@ File: Figure/SAM-6D_pose_flow.eps Graphic file (type eps)
 \openout2 = `chapter_3.aux'.
 
  (./chapter_3.tex
-第\hspace {0.25zw} 3 \hspace {0.25zw}章
-) [15
+
+LaTeX Warning: Reference `fig:f9' on page 15 undefined on input line 3.
 
 
+LaTeX Warning: Reference `fig:f10' on page 15 undefined on input line 14.
 
-]
+[15
+
+
+] [16]) [17]
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex [16
+ (./bibliography.tex [18
 
 
 
@@ -356,21 +360,24 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 15.
 
-[17]) [18] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux) (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./bibliography.aux))
+[19]) [20] (./kzthesis.aux (./title.aux) (./abstract.aux) (./acknowledgments.aux) (./chapter_1.aux) (./chapter_2.aux) (./chapter_3.aux) (./bibliography.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2251 strings out of 481768
- 28434 string characters out of 5933619
+ 2253 strings out of 481768
+ 28451 string characters out of 5933619
  271347 words of memory out of 5000000
- 17593 multiletter control sequences out of 15000+600000
+ 17595 multiletter control sequences out of 15000+600000
  550039 words of font info for 93 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 38i,11n,35p,444b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,35p,444b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on kzthesis.dvi (26 pages, 72052 bytes).
+Output written on kzthesis.dvi (28 pages, 82840 bytes).
