@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2024.12.27)  24 JAN 2025 18:42
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.euc) (TeX Live 2024) (preloaded format=platex 2024.12.27)  24 JAN 2025 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -320,7 +320,7 @@ LaTeX Warning: Reference `fig:f2' on page 11 undefined on input line 153.
 
 [11]
 
-LaTeX Warning: Reference `fig:f6' on page 12 undefined on input line 191.
+LaTeX Warning: Reference `fig:f6' on page 12 undefined on input line 190.
 
 File: Figure/SAM-6D_pose_flow.eps Graphic file (type eps)
 <Figure/SAM-6D_pose_flow.eps> [12] [13]) [14]
