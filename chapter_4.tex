@@ -1,6 +1,107 @@
-﻿\chapter{実験}
+﻿\chapter{実環境における配管設備での検証実験}
 
-\section{データ収集}
+\section{実験方法}
+実験全体の流れを図\ref{fig:flow}に示す。
+まず、配管画像を取得するために、Microsoft社製のRGB-Dカメラ「Azure Kinect DK」を使用した。
+次に、第2章で示した深層学習を用いた6D姿勢推定をRGB画像ベースおよびRGB-D画像ベースの2通りの方法で検証する。
+最後に、両手法において配管のアイソメ図を生成し、その精度を評価した。
+
+\section{RGB画像に基づく配管6D姿勢推定のデータセット収集}
+深層学習による認識ネットワークにはデータセットの数量が多いほど精度とロバスト性が向上する.
+それは様々な場面での配管の写真を学習することによってどの環境においても対応できる汎用性が高まることを意味している.
+
+\subsection{物体検出}
+物体検出に使用したYOLOにおけるデータセットの収集について説明する。
+物体検出のデータセットには、画像内の配管の曲管とT字管の接続部の位置をバウンディングによって、ラベル付けを行うことでデータセットを作成した。
+物体検出のラベリングの例を図\ref{fig:f2}に示す。
+\begin{figure}[htbt]
+	\centering
+	 \includegraphics[height=55mm]{Figure/label_detection.eps}
+	 \caption{物体検出のラベリングの例}
+	 \label{fig:f2}
+\end{figure}
+
+\subsection{画像マッチング}
+続いて、Gen6Dの画像マッチングや姿勢補正に使用する参照画像のデータセットについて説明する。
+まず、検出クラスであるT字管および曲管を周囲から撮影した動画を収集し、各動画から10フレームごとに1枚の画像をサンプリングし、約200枚の参照画像を取得した。
+本検証で用いたT字管の参照画像の一部の例を図\ref{fig:pipe}に示す。
+% \begin{figure}[htbt]
+%   \centering
+%    \includegraphics[height=55mm]{Figure/pipe.eps}
+%    \caption{参照画像の例}
+%    \label{fig:pipe}
+% \end{figure}
+参照画像の3次元点群データを取得するために、Structure from Motion（SfM）手法を用いるColmapソフトウェアを使用した。
+Colmapは、異なる視点から撮影した複数の2D画像を基に3D点群を再構築するソフトウェアである。
+各動画シーケンスに対して、Colmapを用いてカメラの外部および内部パラメータを復元した。
+また、Colmapを用いて得られた3D点群データを図\ref{fig:pipe}に示す。
+% \begin{figure}[htbt]
+%   \centering
+%    \includegraphics[height=55mm]{Figure/pipe_point.eps}
+%    \caption{Colmapを用いた3D点群データ}
+%    \label{fig:pipe}
+% \end{figure}
+
+
+\section{RGB-D画像に基づく配管6D姿勢推定のデータセット収集}
+\subsection{インスタンスセグメンテーション}
+RGB-D画像を用いた配管6D姿勢推定に用いたSAM-6Dによるインスタンスセグメンテーションに用いたデータセットの紹介をする。
+インスタンスセグメンテーションのデータセットには、RGB画像内の配管の曲管とT字管の接続部の位置をピクセル単位でマスク化した。
+インスタンスセグメンテーションのラベリングの例を図\ref{fig:f3}に示す。
+% \begin{figure}[htbt]
+%   \centering
+%    \includegraphics[height=55mm]{Figure/label_segmentation.eps}
+%    \caption{インスタンスセグメンテーションのラベリングの例}
+%    \label{fig:f3}
+% \end{figure}
+
+\subsection{ポイントマッチング}
+SAM-6Dで用いたポイントマッチングに用いたデータセットの紹介をする。
+
+検出クラスであるT字管および曲管の3Dモデルを利用してテンプレート画像を生成する。
+テンプレート画像は、3DソフトウェアであるBlenderを使用して、対象物を中心に配置されたカメラからさまざまな角度のビューを取得する。
+% \begin{figure}[htbt]
+%   \centering
+%    \includegraphics[height=55mm]{Figure/pipe_point.eps}
+%    \caption{3D点群データの例}
+%    \label{fig:pipe_point}
+% \end{figure}
+
+この際、ビューポイントは球状に分布させることで、対象物を全方向から均等に観察することができる。
+
+こうして得られた複数の角度からの画像をテンプレートとして使用することで、対象物の姿勢推定や形状認識に必要な基準データが作成できる。
+また、3Dモデルから点群データをopen3dのPythonライブラリを用いることで取得し、図\ref{fig:pipe_point}に示す。
+% \begin{figure}[htbt]
+%   \centering
+%    \includegraphics[height=55mm]{Figure/pipe_point.eps}
+%    \caption{3D点群データの例}
+%    \label{fig:pipe_point}
+% \end{figure}
+
+\section{評価指標}
+\subsection{6D姿勢推定}
+本研究では、従来使用していた姿勢推定モデルGen6Dと、新たに導入したSAM-6Dの性能を比較した[4]。姿勢推定の評価指標についてはADDとPrj-5を採用する[5]。
+
+\begin{equation}
+\textrm{ADD} = \frac{1}{\mathcal{M}}\sum_{\boldsymbol{x}\in \boldsymbol{\mathcal{M}}}||(\boldsymbol{\textrm{\textbf{Rx}}} + \boldsymbol{\textrm{\textbf{\textbf{T}}}}) - (\boldsymbol{\hat{\textrm{\textbf{Rx}}}} +  \boldsymbol{\hat{\textrm{\textbf{T}}}})||
+\end{equation}
+
+ADDについては、式(1)で示すように、推定された姿勢の3Dメッシュ頂点座標と、正解データの座標との平均距離を計算する。
+ここで、($\boldsymbol{\textrm{\textbf{R}}}$, $\boldsymbol{\textrm{\textbf{T}}}$)は真の姿勢と平行移動、 ($\boldsymbol{\hat{\textrm{\textbf{R}}}}$, $\boldsymbol{\hat{\textrm{\textbf{T}}}}$)は予測された回転と平行移動、$\boldsymbol{\mathcal{M}}$は3Dモデルの頂点集合である。
+Prj-5は、物体の3D点群を真の姿勢および推定された姿勢で2D画像上に射影した際の、各点間の2D距離の平均を計算する。
+両手法においては、真偽の評価が行われる。
+Prj-5の評価基準として、推定された姿勢の平均誤差が5ピクセル未満の場合、その推定姿勢を真と認定する。
+一方、ADDの評価基準では、推定された姿勢の平均距離がオブジェクトの直径の30％未満であれば、真とみなされる。
+これらの評価は全テスト画像に対して計算され、正確と判断された出力結果の割合をそれぞれPrj-5-suc，ADD-sucとして示した。
+従って、評価の値が高いほど、姿勢推定結果の精度が良いと考えられる。
+さらに、各オブジェクトクラスの推定時間を計測し、推定の平均時間を算出した。
+本研究では、配管データセットで670枚の画像から6D姿勢推定の評価を行った。
+
+\subsection{アイソメトリック図}
+
+
+
+\section{結果と考察}
 
 \subsection{配管画像の取得}
 配管画像の取得には、大規模な配管設備に対する実験を行うため、シミュレーション環境で配管の画像を取得した。
@@ -13,7 +114,8 @@
 この近似結果をセンサーモデルとしてシミュレーションに導入した。図3は標準偏差をもとに近似した結果を示した。
 
 
-
+% インテル社製の Intel Realsense D435i である RGB-D カメラを
+% 使用した。
 % RGB-Dカメラから取得したデータセットをRXDネットワークを使用し曲管又はT字管を認識できるか検証する.
 % 物体認識においては他のネットワークでも実験し,RXDネットワークの有用性を確かめる.
 % また,物体検出から得た情報を曲管及びT字管の姿勢推定も行う.
