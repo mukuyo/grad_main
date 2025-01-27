@@ -29,7 +29,9 @@
 \RequirePackageWithOptions{amsmath}
 \RequirePackageWithOptions{amsfonts}
 \RequirePackageWithOptions{bm}     % for bold math
-
+% \RequirePackageWithOptions{tikz}
+% \RequirePackageWithOptions{pgfplots} 
+% \pgfplotsset{compat=1.18}
 %
 % define original commands
 %

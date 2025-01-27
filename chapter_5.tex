@@ -1,11 +1,46 @@
 ﻿\chapter{仮想環境における大規模配管設備での検証実験}
-
-\section{実験方法}
 第4章では実環境においてアイソメ図作成を試みたが、小規模な配管設備での実験であったため、本章では仮想環境において大規模な配管設備でアイソメ図作成を行う。
 
 \section{データセット収集}
+\subsection{仮想環境構築}
+仮想環境の構築には、Unityを使用する。Unityは、3Dモデルの読み込みやカメラの画像取得など、仮想環境の構築に必要な機能が備わっている。
+本検証に用いた大規模配管設備を導入し、RGB画像とDepth画像を取得した。
+仮想環境における画像の取得にはカメラの内部パラメータを設定できるため、実環境に用いたセンサのパラメータを設定することが可能である。
+図\ref{fig:f11}には、Azure Kinect DKの内部パラメータを指定して取得した大規模配管設備のRGB-D画像を示した。
+\begin{figure}[htbt]
+    \centering
+    \includegraphics[height=55mm]{Figure/ex_sim.eps}
+    \caption{仮想環境で取得した大規模配管設備のRGB-D画像}
+    \label{fig:f11}
+\end{figure}
+
+\subsection{センサモデルの導入}
+仮想環境で取得されるDepth画像には実環境に比べてノイズが存在しない。
+そのため、実環境におけるセンサノイズをモデル化し、仮想環境に導入することで、より実環境に近い状況を再現する。
+本研究におけるDepthの取得にはノイズ無し（Ideal）とAzure Kinect DK（Sensor A）とRealsense D435i（Sensor B）の3つの条件で行った。
+センサモデルの取得には、実環境で0.5mから10.0mの範囲で0.5m間隔で測定した距離と実際の距離との標準偏差を求め、その結果を適切な関数で近似した。
+図\ref{fig:f12}には、各センサの標準偏差と測定距離の結果をもとにして近似した結果を示した。
+\begin{figure}[htbt]
+    \centering
+    \includegraphics[height=60mm]{Figure/sensor_model.eps}
+    \caption{Sensor Aの線形近似結果（左）とSensor Bの指数近似結果（右）}
+    \label{fig:f12}
+\end{figure}
+
+Sensor Bの場合、測定距離に対して標準偏差がSensor Aに比べると測定距離が10mの地点では標準偏差に約60倍の差がある。
+そのため、Sensor BのセンサモデルはSensor Aに比べてノイズが大きく、Depth画像にばらつきが大きく現れることが予想される。
+
+図\ref{fig:f12}に示したセンサモデルを用いて、Depth画像の取得結果を示した。
+画像にはノイズを加えたが、目視ではノイズが確認することができなかったが、6D姿勢推定の結果に影響を与える可能性があるため、アイソメ図生成の精度を検証する。
+\begin{figure}[htbt]
+    \centering
+    \includegraphics[height=55mm]{Figure/depth_sim.eps}
+    \caption{Sensor AモデルによるDepth画像（左）とSensor BモデルによるDepth画像（右）}
+    \label{fig:f12}
+\end{figure}
 
 \section{評価指標}
+評価指標には第4章で述べた6D姿勢推定の評価指標に加え、アイソメ図の評価指標を導入する。
 アイソメ図の評価には、Mean Error Distance（MED）とGenerated Line Count（GLC）の2つの指標が用いられる。
 アイソメ図の評価におけるMEDは、生成されたアイソメ図の各線分と正解データの線分との平均距離を求めるものである。
 この距離は、各線分における誤差を計算し、その平均値を取ることで算出される。
@@ -32,16 +67,44 @@ GLCの値が大きいほど、多くの対応線分が正確に生成されて�
 
 \section{結果と考察}
 
-\subsection{配管画像の取得}
-配管画像の取得には、大規模な配管設備に対する実験を行うため、シミュレーション環境で配管の画像を取得した。
-また、配管画像の取得には、RGB-DカメラであるRealsense D435iとAzure Kinect DKを使用することを想定する。
-図2には、RGB-Dカメラで撮影した配管画像の例と、シミュレーション環境で取得した画像の例を示した。
+\begin{table}[h]
+    \centering
+    \caption{Evaluation of 6D pose estimation}
+    \begin{tabular}{|p{1.7cm}|p{1.7cm}|p{1.7cm}|p{1.7cm}|}
+    \hline
+    & ADD-suc & Prj-suc\\
+    \hline
+    Elbow & 100.0 & 100.0 \\
+    \hline
+    Tee & 100.0 & 100.0\\
+    \hline
+    Total & 100.0 & 100.0\\
+    \hline
+    \end{tabular}
+\end{table}
 
-\subsection{センサーモデルの導入}
-シミュレーション環境を実環境に近づけるため、Azure Kinect DKのセンサノイズを計測した。
-0.5mから9.5mの範囲で0.5m間隔ごとに、実際の距離と測定距離の標準偏差を測定し、その結果を指数関数で近似した。
-この近似結果をセンサーモデルとしてシミュレーションに導入した。図3は標準偏差をもとに近似した結果を示した。
+\begin{table}[h]
+    \centering
+    \caption{Evaluation of 6D pose estimation}
+    \begin{tabular}{|p{1.7cm}|p{1.7cm}|p{1.7cm}|p{1.7cm}|}
+    \hline
+    & ADD-suc & Prj-suc\\
+    \hline
+    Elbow & 100.0 & 100.0 \\
+    \hline
+    Tee & 100.0 & 100.0\\
+    \hline
+    Total & 100.0 & 100.0\\
+    \hline
+    \end{tabular}
+\end{table}
 
+\begin{figure}[htbt]
+	\centering
+	\includegraphics[height=110mm]{Figure/result_all_sim.eps}
+	\caption{6D姿勢推定の結果の一部}
+	\label{fig:f2}
+\end{figure}
 
 
 % RGB-Dカメラから取得したデータセットをRXDネットワークを使用し曲管又はT字管を認識できるか検証する.
