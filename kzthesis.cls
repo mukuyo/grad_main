@@ -29,6 +29,9 @@
 \RequirePackageWithOptions{amsmath}
 \RequirePackageWithOptions{amsfonts}
 \RequirePackageWithOptions{bm}     % for bold math
+\RequirePackageWithOptions{array}
+% \RequirePackageWithOptions{graphicx}
+% \RequirePackageWithOptions{caption}
 % \RequirePackageWithOptions{tikz}
 % \RequirePackageWithOptions{pgfplots} 
 % \pgfplotsset{compat=1.18}
