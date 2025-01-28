@@ -1,12 +1,12 @@
 \chapter{アイソメトリック図生成}
 \section{全体構造}
 アイソメ図作成には6D姿勢推定の結果を用いて配管の接続関係を推定する配管ペアマッチングを行い、その結果を基に配管情報の描画を行う。図\ref{fig:f9}にアイソメ図生成の全体構造を示す。
-% \begin{figure}[htbt]
-%   \centering
-%    \includegraphics[height=80mm]{Figure/iso.eps}
-%    \caption{アイソメ図生成の全体構造}
-%    \label{fig:f9}
-% \end{figure}
+\begin{figure}[htbt]
+  \centering
+   \includegraphics[height=55mm]{Figure/iso_flow.eps}
+   \caption{アイソメ図生成の流れ}
+   \label{fig:f9}
+\end{figure}
 
 \section{配管ペアマッチング}
 アイソメ図作成では、向かい合った配管同士を繋ぎ合わせるため、接続部のペアを特定する必要がある。
@@ -72,7 +72,7 @@ T字管には接続先となる出口が3つあり、それぞれの方向ベク
 
 
 
-\section{配管ネットワークの接続探索}
+\section{配管接続関係の探索}
 配管ネットワークの接続関係を効率的に探索するために、深さ優先探索（Depth First Search, DFS）を利用する。本手法では、配管の接続部をグラフ構造として表現し、DFSにより再帰的に全ての接続関係を明らかにする。
 
 まず、配管の接続情報をグラフとして定義する。ここで、配管の接続部をノード、接続情報をエッジとする。グラフ $G$ を以下のように表す。
