@@ -16,10 +16,10 @@
 	\centering
 	 \includegraphics[height=52mm]{Figure/detect_class.eps}
 	 \caption{配管構造の例}
-	 \label{fig:f1}
+	 \label{fig:2-f1}
 \end{figure}
 
-図\ref{fig:f1}に示すように、一般的な配管は直管を中心とし、接続部分として両端に曲管やT字管が存在する。
+図\ref{fig:2-f1}に示すように、一般的な配管は直管を中心とし、接続部分として両端に曲管やT字管が存在する。
 この特性を利用し、本研究では直管を検出対象から除外し、接続部である曲管およびT字管の姿勢を推定する手法を採用した。
 これにより、接続部同士のペアを直線で結ぶことで効率的にアイソメ図を描画することが可能である。\\
 　さらに、直管を検出対象に含める場合、配管設備が大規模になるにつれて認識精度が低下することが問題となる。
@@ -30,12 +30,12 @@
 \section{RGB画像に基づく配管6D姿勢推定}
 \subsection{全体構成}
 RGB画像を用いた配管の6D姿勢推定には、Gen6Dを用いて実装する。
-図\ref{fig:f2}にGen6Dによる6D姿勢推定の流れを示す。
+図\ref{fig:2-f2}にGen6Dによる6D姿勢推定の流れを示す。
 \begin{figure}[htbt]
 	\centering
 	 \includegraphics[height=45mm]{Figure/Gen6D.eps}
 	 \caption{Gen6Dの姿勢推定方法の流れ}
-	 \label{fig:f2}
+	 \label{fig:2-f2}
 \end{figure}
 
 Gen6DはDetector（物体検出）、Selector（画像マッチング）、Refiner（姿勢補正）の3つのステップから構成されている。
@@ -45,22 +45,22 @@ Gen6DはDetector（物体検出）、Selector（画像マッチング）、Refin
 このため、複数の配管部品を含むアイソメ図を作成する際には、複数物体を同時に検出可能な手法が求められる。
 一方で、YOLOは各検出クラスに対して複数物体の検出が可能であり、Gen6Dの物体検出ステップの代替手法として有効である。\\
 　本研究では、YOLOを用いて各接続部を検出し、その結果を基にGen6Dを用いて姿勢を推定する手法を提案する。
-データ収集から配管6D姿勢推定までの全体的な流れを図\ref{fig:f2}に示す。
+データ収集から配管6D姿勢推定までの全体的な流れを図\ref{fig:2-f3}に示す。
 \begin{figure}[htbt]
 	\centering
 	 \includegraphics[height=52mm]{Figure/RGB_flow.eps}
 	 \caption{RGB画像に基づく配管6D姿勢推定の流れ}
-	 \label{fig:f2}
+	 \label{fig:2-f3}
 \end{figure}
 
 
 \subsection{物体検出}
-YOLOのアルゴリズムでは、図\ref{fig:f4}に示すように入力画像を $S \times S$ のグリッドセルに分割し、各セルで複数のバウンディングボックスとその信頼度を計算する。\\
+YOLOのアルゴリズムでは、図\ref{fig:2-f4}に示すように入力画像を $S \times S$ のグリッドセルに分割し、各セルで複数のバウンディングボックスとその信頼度を計算する。\\
 \begin{figure}[htbt]
 	\centering
 	 \includegraphics[height=75mm]{Figure/YOLO.eps}
 	 \caption{物体検出YOLOの検出アルゴリズム}
-	 \label{fig:f4}
+	 \label{fig:2-f4}
 \end{figure}
 　物体の中心が特定のグリッドセル内に位置する場合、そのセルは物体を検出するように学習される。
 その後、各セルでバウンディングボックスが推定され、$B$個のバウンディングボックスに対してそれぞれ信頼スコアが予測される。
@@ -94,12 +94,12 @@ $C_i$ および $\hat{C}_i$ は、物体が存在する信頼度スコアの真�
 画像マッチングでは、物体検出によって得られた画像に最も近い視点を持つ参照画像を選択することを目的とする。
 参照画像は、Colmapを活用して内部パラメータおよび外部パラメータを取得することが可能である。
 これにより、テスト画像に最も類似した参照画像の視点情報を基に、物体の初期姿勢を推定することが可能となる。
-画像マッチングのアーキテクチャを図\ref{fig:f5}に示す。
+画像マッチングのアーキテクチャを図\ref{fig:2-f5}に示す。
 \begin{figure}[htbt]
 	\centering
 	 \includegraphics[height=72mm]{Figure/selector_arc.eps}
 	 \caption{画像マッチングのアーキテクチャ}
-	 \label{fig:f5}
+	 \label{fig:2-f5}
 \end{figure}
 
 このプロセスは、まずVGG-11という深層学習モデルを用いて入力画像および参照画像から特徴マップを抽出する。
@@ -122,12 +122,12 @@ Transformerとは、自己注意メカニズム（self-attention）を通じて�
 
 \subsection{姿勢補正}
 Gen6Dの姿勢補正は、初期推定された物体の姿勢を精密化するために設計された手法であり、特にモデルフリーの状況において高い汎用性を発揮する。
-姿勢補正のアーキテクチャを図\ref{fig:f5}に示す。
+姿勢補正のアーキテクチャを図\ref{fig:2-f6}に示す。
 \begin{figure}[htbt]
 	\centering
 	 \includegraphics[height=72mm]{Figure/selector_arc.eps}
 	 \caption{姿勢補正のアーキテクチャ}
-	 \label{fig:f5}
+	 \label{fig:2-f6}
 \end{figure}
 
 基本的なアプローチとして、Gen6Dは参照画像の情報を3D空間に統合し、それを解析することで精密な6D姿勢を推定する。
@@ -142,9 +142,10 @@ Gen6Dの姿勢補正は、初期推定された物体の姿勢を精密化する
 この点が、モデルフリーな環境で特に有効であり、未知の物体や環境に対しても高い精度を実現する要因となっている。\\
 　最後に、損失関数はサンプリングされた点群を用いて予測された姿勢と正解の姿勢の間の差を最小化するものが用いられる。
 
-\[
+\begin{equation}
 \mathcal{L}_{\text{ref}} = \sum_{k} \|s_{\text{pr}} R_{\text{pr}} (p_k + t'_{\text{pr}}) - s_{\text{gt}} R_{\text{gt}} (p_k + t'_{\text{gt}})\|^2
-\]
+\tag{2.3}
+\end{equation}
 
 ここで、\(p_k\)は入力カメラ座標系におけるサンプリング点、\(s_{\text{pr}}, R_{\text{pr}}, t'_{\text{pr}}\)はそれぞれ予測されたスケール、回転、平行移動、\(s_{\text{gt}}, R_{\text{gt}}, t'_{\text{gt}}\)は正解のスケール、回転、平行移動を示す。
 
@@ -152,23 +153,23 @@ Gen6Dの姿勢補正は、初期推定された物体の姿勢を精密化する
 \section{RGB-D画像に基づく配管6D姿勢推定}
 \subsection{全体構成}
 RGB-D画像を用いた配管の6D姿勢推定には、SAM-6Dを使用して実装する。
-図\ref{fig:f6}にSAM-6Dによる6D姿勢推定の流れを示す。
+図\ref{fig:2-f7}にSAM-6Dによる6D姿勢推定の流れを示す。
 \begin{figure}[htbt]
 	\centering
 	 \includegraphics[height=90mm]{Figure/SAM-6D.eps}
 	 \caption{SAM-6Dによる6D姿勢推定の流れ}
-	 \label{fig:f6}
+	 \label{fig:2-f7}
 \end{figure}
 
 SAM-6Dは、インスタンスセグメンテーションとしてSegment AnythingとObject Matchingを活用し、姿勢推定の段階ではCoarse Point Matching（ポイントマッチング）とFine Point Matching（姿勢補正）のステップを経て6D姿勢を推定するモデルである。
 SAM-6Dはインスタンスセグメンテーションにおいて事前学習データを基にゼロショットで推論や予測を行うことが可能なモデルである。
 しかし、本研究では検出対象のクラスが事前に定義されているため、Segment Anythingの汎用的なセグメンテーション機能は使用せず、Object Matchingを用いてインスタンスセグメンテーションを行う。
-よって、RGB-D画像に基づく配管6D姿勢推定は図\ref{fig:f7}のようになる。
+よって、RGB-D画像に基づく配管6D姿勢推定は図\ref{fig:2-f8}のようになる。
 \begin{figure}[htbt]
 	\centering
 	 \includegraphics[height=57mm]{Figure/RGB-D_flow.eps}
 	 \caption{RGB-D画像に基づく配管6D姿勢推定の流れ}
-	 \label{fig:f7}
+	 \label{fig:2-f8}
 \end{figure}
 
 \subsection{インスタンスセグメンテーション}
@@ -202,12 +203,12 @@ s_m = \frac{s_{sem} + s_{appe} + r_{vis} \cdot s_{geo}}{1 + 1 + r_{vis}}
 
 
 \subsection{姿勢推定}
-図\ref{fig:f6}にSAM-6Dによるポイントマッチングおよび姿勢補正の流れを示す。
+図\ref{fig:2-f9}にSAM-6Dによるポイントマッチングおよび姿勢補正の流れを示す。
 \begin{figure}[htbt]
 	\centering
 	 \includegraphics[height=82mm]{Figure/SAM-6D_pose_flow.eps}
 	 \caption{SAM-6Dのポイントマッチングおよび姿勢補正の流れ}
-	 \label{fig:f6}
+	 \label{fig:2-f9}
 \end{figure}
 
 Coarse Point Matchingは、提案物体点群と対象物点群間で初期的な対応関係を確立し、対象物の粗い6Dポーズを推定する手法である。
@@ -224,7 +225,6 @@ A^c = [f_{\text{bg}, m}^c, F_m^c] \cdot [f_{\text{bg}, o}^c, F_o^c]^T
 
 このアサインメント行列は、提案物体点群の各点が対象物点群のどの点と対応しているか、または背景トークンと対応しているかを示すスコアを表す。
 この行列を正規化することで、ソフトアサインメント行列$\tilde{A}^c$を導出する。
-ソフトアサインメント行列は、各点がどの点に対応するかの確率を表現する行列であり、以下のように計算される。
 
 \[
 \tilde{A}^c = \text{Softmax}_{\text{row}}\left(\frac{A^c}{\tau}\right) \cdot \text{Softmax}_{\text{col}}\left(\frac{A^c}{\tau}\right)
@@ -232,7 +232,6 @@ A^c = [f_{\text{bg}, m}^c, F_m^c] \cdot [f_{\text{bg}, o}^c, F_o^c]^T
 
 ここで、$\tau$は温度パラメータであり、値を調整することで確率分布の滑らかさを制御する。
 ソフトマックス操作により、行列内の各値は0から1の範囲に正規化され、行方向および列方向でそれぞれの合計が1になるように処理される。
-
 ソフトアサインメント行列$\tilde{A}^c$を用いて、提案物体点群と対象物点群間の対応点ペアを抽出する。
 これに基づいてポーズ仮説$(R_{\text{hyp}}, t_{\text{hyp}})$を生成する。仮説ポーズの評価には以下のスコア関数を用いる。
 
@@ -255,10 +254,10 @@ P_m^{f, \text{transformed}} = R_{init} P_m^f + t_{init}
 とする。この変換結果に基づいて、位置エンコーディングを学習する。位置エンコーディングは、点群の幾何学的な位置関係を特徴空間に埋め込むために使用される。\\
 　その後、Sparse-to-Dense Point Transformer（SDPT）を用いて、高密度点群間の対応関係を学習する。
 SDPTでは、まず低密度な特徴をサンプリングし、それらの特徴間の関係を学習した後、それを高密度な特徴に拡張する。
-このプロセスにより、効率的かつ効果的に高密度点群間の対応を確立できる。\\
-　最終的に、学習された対応関係に基づいて、以下の式で物体の最終的なポーズ $R$ および $t$ を推定する：
+このプロセスにより、効率的かつ効果的に高密度点群間の対応を確立できる。
+最終的に、学習された対応関係に基づいて、以下の式で物体の最終的なポーズ $R$ および $t$ を推定する.
 \[
 (R, t) = \text{Weighted SVD}(P_m^f, P_o^f)
 \]
 ここで、Weighted SVD は対応点間の重み付き特異値分解を指す。
-この結果により、より正確な6次元ポーズ推定が可能となる。
+この結果により、初期姿勢をより精緻化した姿勢を推定することが可能となる。

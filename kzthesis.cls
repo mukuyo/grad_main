@@ -30,6 +30,7 @@
 \RequirePackageWithOptions{amsfonts}
 \RequirePackageWithOptions{bm}     % for bold math
 \RequirePackageWithOptions{array}
+\RequirePackageWithOptions{placeins}
 % \RequirePackageWithOptions{graphicx}
 % \RequirePackageWithOptions{caption}
 % \RequirePackageWithOptions{tikz}
