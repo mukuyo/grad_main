@@ -20,7 +20,7 @@
 %
 % load a class and packages
 %
-\NeedsTeXFormat{pLaTeX2e}      % フォーマットファイルの指定（日本語を使用する）
+\NeedsTeXFormat{pLaTeX2e}      % フォーマットファイルの指定(日本語を使用する)
 \LoadClass[12pt,a4paper]{jbook}     % 本クラスファイルは jbook をもとにする
 
 %\RequirePackage[dvipdfm]{graphicx}    % グラフィック (PDF)
@@ -59,8 +59,8 @@
 \setlength{\voffset}{-1.0in}   % 基準点を用紙左上隅にする
 \setlength{\hoffset}{-1.0in}
 
-%\addtolength{\voffset}{1.0mm}   % 出力時の補正値（縦方向）
-%\addtolength{\hoffset}{1.0mm}   % 出力時の補正値（横方向）
+%\addtolength{\voffset}{1.0mm}   % 出力時の補正値(縦方向)
+%\addtolength{\hoffset}{1.0mm}   % 出力時の補正値(横方向)
 
 \setlength{\topmargin}{10mm}
 \setlength{\headheight}{5mm}
@@ -80,7 +80,7 @@
 %
 % paragraph parameters
 %
-\setlength{\parindent}{1zw}    % 段落先頭の字下げ幅（漢字一文字分）
+\setlength{\parindent}{1zw}    % 段落先頭の字下げ幅(漢字一文字分)
 
 %
 % float parameters
