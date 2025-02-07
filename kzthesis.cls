@@ -25,12 +25,16 @@
 
 %\RequirePackage[dvipdfm]{graphicx}    % グラフィック (PDF)
 \RequirePackage[dvips]{graphicx}    % グラフィック (PostScript)
+\RequirePackage[dvipdfmx]{hyperref}
 \RequirePackageWithOptions{amssymb}
 \RequirePackageWithOptions{amsmath}
 \RequirePackageWithOptions{amsfonts}
 \RequirePackageWithOptions{bm}     % for bold math
 \RequirePackageWithOptions{array}
 \RequirePackageWithOptions{placeins}
+% \RequirePackageWithOptions{natbib}
+% \RequirePackageWithOptions{hyperref}
+% \RequirePackageWithOptions{graphicx}
 % \RequirePackageWithOptions{graphicx}
 % \RequirePackageWithOptions{caption}
 % \RequirePackageWithOptions{tikz}
